@@ -9,15 +9,10 @@ const FluxosDeTrabalho = () => {
 
   return (
     <View style={styles.fluxosDeTrabalho}>
-      <Image
-        style={[styles.iosstatusBarblackIcon, styles.backPosition]}
-        contentFit="cover"
-        source={require("../assets/iosstatus-barblack.png")}
-      />
       <View style={styles.pageHeader}>
         <Text style={[styles.new, styles.newTypo]}>Novo</Text>
         <Text style={[styles.expenses, styles.logInTypo]}>
-          Fluxos deTrabalho
+          Fluxos de {"\n"} Trabalho
         </Text>
         <Image
           style={[styles.iconx, styles.backPosition]}
@@ -69,13 +64,6 @@ const styles = StyleSheet.create({
     paddingHorizontal: Padding.p_13xl,
     borderRadius: Border.br_81xl,
     position: "absolute",
-  },
-  iosstatusBarblackIcon: {
-    maxWidth: "100%",
-    height: 44,
-    right: 0,
-    top: 0,
-    overflow: "hidden",
   },
   new: {
     top: 8,

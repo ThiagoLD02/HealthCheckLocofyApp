@@ -9,11 +9,6 @@ const CheckIn = () => {
 
   return (
     <View style={styles.checkIn}>
-      <Image
-        style={styles.iosstatusBarwhiteIcon}
-        contentFit="cover"
-        source={require("../assets/iosstatus-barwhite.png")}
-      />
       <View style={[styles.checkInChild, styles.checkLayout]} />
       <View style={[styles.scanQrCodeParent, styles.codeParentPosition]}>
         <Text style={styles.scanQrCode}>Scan QR Code</Text>
@@ -85,15 +80,6 @@ const styles = StyleSheet.create({
   voltar1Clr: {
     color: Color.gray01,
     textAlign: "left",
-  },
-  iosstatusBarwhiteIcon: {
-    top: 0,
-    right: 0,
-    left: 0,
-    height: 44,
-    maxWidth: "100%",
-    position: "absolute",
-    overflow: "hidden",
   },
   checkInChild: {
     backgroundColor: Color.limegreen,

@@ -31,7 +31,6 @@ const App = () => {
     Poppins_regular: require("./assets/fonts/Poppins_regular.ttf"),
     Poppins_medium: require("./assets/fonts/Poppins_medium.ttf"),
     Poppins_semibold: require("./assets/fonts/Poppins_semibold.ttf"),
-    "SF Pro Text_regular": require("./assets/fonts/SF_Pro_Text_regular.ttf"),
   });
 
   if (!fontsLoaded && !error) {

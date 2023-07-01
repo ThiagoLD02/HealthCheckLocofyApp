@@ -4,16 +4,12 @@ import { StyleSheet, Text, View, Pressable } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { Color, FontFamily, FontSize, Padding, Border } from "../GlobalStyles";
 
+// paciente
 const LogIn1 = () => {
   const navigation = useNavigation();
 
   return (
     <View style={styles.logIn}>
-      <Image
-        style={styles.iosstatusBarblackIcon}
-        contentFit="cover"
-        source={require("../assets/iosstatus-barblack1.png")}
-      />
       <View style={styles.pageHeader}>
         <Text style={[styles.login, styles.showFlexBox]}>Login</Text>
         <Text style={[styles.logIn1, styles.logTypo]}>Log In</Text>
@@ -49,180 +45,6 @@ const LogIn1 = () => {
         <Text style={[styles.logIn2, styles.logTypo]}>Log In</Text>
       </Pressable>
       <Text style={styles.esqueceuSuaSenha}>Esqueceu sua senha?</Text>
-      <View style={styles.ioskeyboardlightalphabetic}>
-        <View style={[styles.background, styles.backgroundPosition]}>
-          <View style={[styles.background1, styles.backgroundPosition]} />
-        </View>
-        <View style={[styles.homeIndicator, styles.backgroundPosition]}>
-          <View style={styles.homeIndicator1} />
-        </View>
-        <View style={styles.keys}>
-          <Image
-            style={styles.dictationIcon}
-            contentFit="cover"
-            source={require("../assets/dictation.png")}
-          />
-          <Image
-            style={styles.emojiIcon}
-            contentFit="cover"
-            source={require("../assets/emoji.png")}
-          />
-          <View style={[styles.return, styles.viewPosition]}>
-            <Image
-              style={styles.rectangleIcon}
-              contentFit="cover"
-              source={require("../assets/rectangle.png")}
-            />
-            <Text style={[styles.label, styles.labelTypo]}>Go</Text>
-          </View>
-          <View style={[styles.space, styles.viewPosition]}>
-            <Image
-              style={styles.rectangleIcon}
-              contentFit="cover"
-              source={require("../assets/rectangle1.png")}
-            />
-            <Text style={[styles.label1, styles.labelTypo]}>space</Text>
-          </View>
-          <View style={[styles.view, styles.viewPosition]}>
-            <Image
-              style={styles.rectangleIcon}
-              contentFit="cover"
-              source={require("../assets/rectangle2.png")}
-            />
-            <Text style={[styles.label2, styles.labelTypo]}>123</Text>
-          </View>
-          <View style={[styles.delete, styles.shiftPosition]}>
-            <View style={[styles.background, styles.backgroundPosition]}>
-              <Image
-                style={styles.rectangleIcon}
-                contentFit="cover"
-                source={require("../assets/rectangle3.png")}
-              />
-              <Text style={[styles.label3, styles.labelTypo]}>{` `}</Text>
-            </View>
-            <Image
-              style={styles.deleteButtonIcon}
-              contentFit="cover"
-              source={require("../assets/delete-button.png")}
-            />
-          </View>
-          <View style={[styles.shift, styles.shiftPosition]}>
-            <View style={[styles.background, styles.backgroundPosition]}>
-              <View style={styles.rectangleShadowBox} />
-              <Text style={[styles.symbol, styles.symbolTypo]}>{` `}</Text>
-            </View>
-            <Image
-              style={[styles.shiftIcon, styles.iconLayout]}
-              contentFit="cover"
-              source={require("../assets/shift.png")}
-            />
-          </View>
-          <View style={[styles.m, styles.mPosition]}>
-            <View style={styles.rectangleShadowBox} />
-            <Text style={[styles.symbol1, styles.symbolTypo]}>M</Text>
-          </View>
-          <View style={[styles.n, styles.nPosition]}>
-            <View style={styles.rectangleShadowBox} />
-            <Text style={[styles.symbol2, styles.symbolTypo]}>N</Text>
-          </View>
-          <View style={[styles.b, styles.bPosition]}>
-            <View style={styles.rectangleShadowBox} />
-            <Text style={[styles.symbol3, styles.symbolTypo]}>B</Text>
-          </View>
-          <View style={[styles.v, styles.vPosition]}>
-            <View style={styles.rectangleShadowBox} />
-            <Text style={[styles.symbol2, styles.symbolTypo]}>V</Text>
-          </View>
-          <View style={[styles.c, styles.cPosition]}>
-            <View style={styles.rectangleShadowBox} />
-            <Text style={[styles.symbol2, styles.symbolTypo]}>C</Text>
-          </View>
-          <View style={[styles.x, styles.xPosition]}>
-            <View style={styles.rectangleShadowBox} />
-            <Text style={[styles.symbol2, styles.symbolTypo]}>X</Text>
-          </View>
-          <View style={[styles.z, styles.zPosition]}>
-            <View style={styles.rectangleShadowBox} />
-            <Text style={[styles.symbol3, styles.symbolTypo]}>Z</Text>
-          </View>
-          <View style={[styles.l, styles.lPosition]}>
-            <View style={styles.rectangleShadowBox} />
-            <Text style={[styles.symbol8, styles.symbolTypo]}>L</Text>
-          </View>
-          <View style={[styles.k, styles.lPosition]}>
-            <View style={styles.rectangleShadowBox} />
-            <Text style={[styles.symbol3, styles.symbolTypo]}>K</Text>
-          </View>
-          <View style={[styles.j, styles.lPosition]}>
-            <View style={styles.rectangleShadowBox} />
-            <Text style={[styles.symbol8, styles.symbolTypo]}>J</Text>
-          </View>
-          <View style={[styles.h, styles.lPosition]}>
-            <View style={styles.rectangleShadowBox} />
-            <Text style={[styles.symbol2, styles.symbolTypo]}>H</Text>
-          </View>
-          <View style={[styles.g, styles.lPosition]}>
-            <View style={styles.rectangleShadowBox} />
-            <Text style={[styles.symbol2, styles.symbolTypo]}>G</Text>
-          </View>
-          <View style={[styles.f, styles.lPosition]}>
-            <View style={styles.rectangleShadowBox} />
-            <Text style={[styles.symbol8, styles.symbolTypo]}>F</Text>
-          </View>
-          <View style={[styles.d, styles.lPosition]}>
-            <View style={styles.rectangleShadowBox} />
-            <Text style={[styles.symbol2, styles.symbolTypo]}>D</Text>
-          </View>
-          <View style={[styles.s, styles.lPosition]}>
-            <View style={styles.rectangleShadowBox} />
-            <Text style={[styles.symbol3, styles.symbolTypo]}>S</Text>
-          </View>
-          <View style={[styles.a, styles.lPosition]}>
-            <View style={styles.rectangleShadowBox} />
-            <Text style={[styles.symbol2, styles.symbolTypo]}>A</Text>
-          </View>
-          <View style={[styles.p, styles.pPosition]}>
-            <View style={styles.rectangleShadowBox} />
-            <Text style={[styles.symbol3, styles.symbolTypo]}>P</Text>
-          </View>
-          <View style={[styles.o, styles.pPosition]}>
-            <View style={styles.rectangleShadowBox} />
-            <Text style={[styles.symbol18, styles.symbolTypo]}>O</Text>
-          </View>
-          <View style={[styles.i, styles.pPosition]}>
-            <View style={styles.rectangleShadowBox} />
-            <Text style={[styles.symbol19, styles.symbolTypo]}>I</Text>
-          </View>
-          <View style={[styles.u, styles.pPosition]}>
-            <View style={styles.rectangleShadowBox} />
-            <Text style={[styles.symbol2, styles.symbolTypo]}>U</Text>
-          </View>
-          <View style={[styles.y, styles.pPosition]}>
-            <View style={styles.rectangleShadowBox} />
-            <Text style={[styles.symbol3, styles.symbolTypo]}>Y</Text>
-          </View>
-          <View style={[styles.t, styles.pPosition]}>
-            <View style={styles.rectangleShadowBox} />
-            <Text style={[styles.symbol3, styles.symbolTypo]}>T</Text>
-          </View>
-          <View style={[styles.r, styles.pPosition]}>
-            <View style={styles.rectangleShadowBox} />
-            <Text style={[styles.symbol3, styles.symbolTypo]}>R</Text>
-          </View>
-          <View style={[styles.e, styles.pPosition]}>
-            <View style={styles.rectangleShadowBox} />
-            <Text style={[styles.symbol3, styles.symbolTypo]}>E</Text>
-          </View>
-          <View style={[styles.w, styles.pPosition]}>
-            <View style={styles.rectangleShadowBox} />
-            <Text style={[styles.symbol25, styles.symbolTypo]}>W</Text>
-          </View>
-          <View style={[styles.q, styles.pPosition]}>
-            <View style={styles.rectangleShadowBox} />
-            <Text style={[styles.symbol18, styles.symbolTypo]}>Q</Text>
-          </View>
-        </View>
-      </View>
       <Pressable
         style={[styles.buttonprimary1, styles.buttonprimarySpaceBlock]}
         onPress={() => navigation.navigate("SignUp1")}
@@ -284,7 +106,7 @@ const styles = StyleSheet.create({
     position: "absolute",
   },
   labelTypo: {
-    fontFamily: FontFamily.sFProTextRegular,
+    fontFamily: FontFamily.uI16Medium,
     lineHeight: 21,
     letterSpacing: 0,
     top: "26.19%",
@@ -305,7 +127,7 @@ const styles = StyleSheet.create({
     letterSpacing: -1,
     fontSize: FontSize.size_3xl_5,
     marginTop: -13,
-    fontFamily: FontFamily.sFProTextRegular,
+    fontFamily: FontFamily.uI16Medium,
     top: "50%",
     textAlign: "center",
     color: Color.black,
@@ -355,15 +177,6 @@ const styles = StyleSheet.create({
     height: "16.22%",
     top: "0%",
     position: "absolute",
-  },
-  iosstatusBarblackIcon: {
-    height: 44,
-    maxWidth: "100%",
-    right: 0,
-    top: 0,
-    left: 0,
-    position: "absolute",
-    overflow: "hidden",
   },
   login: {
     top: 8,

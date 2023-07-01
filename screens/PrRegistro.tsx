@@ -9,11 +9,6 @@ const PrRegistro = () => {
 
   return (
     <View style={styles.prRegistro}>
-      <Image
-        style={[styles.iosstatusBarblackIcon, styles.iconLayout]}
-        contentFit="cover"
-        source={require("../assets/iosstatus-barblack.png")}
-      />
       <View style={styles.pageHeader}>
         <Text style={[styles.filter, styles.showFlexBox]}>Filter</Text>
         <Text style={styles.content}>Pré-Registro</Text>
@@ -314,13 +309,6 @@ const styles = StyleSheet.create({
     right: 19,
     height: 50,
     position: "absolute",
-  },
-  iosstatusBarblackIcon: {
-    height: 44,
-    left: 0,
-    right: 0,
-    maxWidth: "100%",
-    top: 0,
   },
   filter: {
     top: 8,

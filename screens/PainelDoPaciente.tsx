@@ -9,11 +9,6 @@ const PainelDoPaciente = () => {
 
   return (
     <View style={styles.painelDoPaciente}>
-      <Image
-        style={[styles.iosstatusBarblackIcon, styles.feedPosition]}
-        contentFit="cover"
-        source={require("../assets/iosstatus-barblack.png")}
-      />
       <View style={[styles.pageHeader, styles.imagePosition]}>
         <Text style={[styles.filter, styles.iconxPosition]}>Filter</Text>
         <Text style={[styles.feed, styles.feedTypo]}>Painel doPaciente</Text>
@@ -86,13 +81,6 @@ const styles = StyleSheet.create({
     left: 18,
     right: 14,
     position: "absolute",
-  },
-  iosstatusBarblackIcon: {
-    maxWidth: "100%",
-    height: 44,
-    left: 0,
-    right: 0,
-    overflow: "hidden",
   },
   filter: {
     top: 8,

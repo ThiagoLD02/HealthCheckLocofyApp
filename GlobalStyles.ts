@@ -8,7 +8,6 @@ export const FontFamily = {
   poppinsRegular: "Poppins_regular",
   poppinsMedium: "Poppins_medium",
   poppinsSemibold: "Poppins_semibold",
-  sFProTextRegular: "SF Pro Text_regular",
 };
 /* font sizes */
 export const FontSize = {

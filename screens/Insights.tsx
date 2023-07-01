@@ -9,11 +9,6 @@ const Insights = () => {
 
   return (
     <View style={styles.insights}>
-      <Image
-        style={styles.iosstatusBarblackIcon}
-        contentFit="cover"
-        source={require("../assets/iosstatus-barblack.png")}
-      />
       <View style={[styles.pageHeader, styles.pageHeaderPosition]}>
         <Text style={styles.next}>Next</Text>
         <Text style={[styles.insights1, styles.textPosition]}>Insights</Text>
@@ -269,15 +264,6 @@ const styles = StyleSheet.create({
     height: 35,
     width: 336,
     position: "absolute",
-  },
-  iosstatusBarblackIcon: {
-    height: 44,
-    maxWidth: "100%",
-    left: 0,
-    right: 0,
-    top: 0,
-    position: "absolute",
-    overflow: "hidden",
   },
   next: {
     top: 8,

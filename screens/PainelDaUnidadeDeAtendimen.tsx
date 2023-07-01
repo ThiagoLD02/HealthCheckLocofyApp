@@ -9,11 +9,6 @@ const PainelDaUnidadeDeAtendimen = () => {
 
   return (
     <View style={styles.painelDaUnidadeDeAtendimen}>
-      <Image
-        style={[styles.iosstatusBarblackIcon, styles.feedPosition]}
-        contentFit="cover"
-        source={require("../assets/iosstatus-barblack.png")}
-      />
       <View style={[styles.pageHeader, styles.buttonprimaryPosition]}>
         <Text style={[styles.filter, styles.iconxPosition]}>Filter</Text>
         <Text style={[styles.feed, styles.feedTypo]}>Painel</Text>
@@ -29,7 +24,6 @@ const PainelDaUnidadeDeAtendimen = () => {
           <Text style={[styles.voltar, styles.filterTypo]}>Voltar</Text>
         </Pressable>
       </View>
-      <View style={[styles.image, styles.buttonprimaryPosition]} />
       <Pressable
         style={[styles.buttonprimary, styles.buttonprimarySpaceBlock]}
         onPress={() => navigation.navigate("Formulrio")}
@@ -58,7 +52,7 @@ const PainelDaUnidadeDeAtendimen = () => {
         style={[styles.buttonsecondary, styles.buttonprimarySpaceBlock]}
         onPress={() => navigation.navigate("GeradorDeQRCode")}
       >
-        <Text style={[styles.clickMe, styles.feedTypo]}>Gerar QR Code</Text>
+        <Text style={[styles.clickMe, styles.feedTypo]}>Ler QR Code</Text>
       </Pressable>
     </View>
   );
@@ -94,13 +88,6 @@ const styles = StyleSheet.create({
     paddingHorizontal: Padding.p_13xl,
     borderRadius: Border.br_81xl,
     position: "absolute",
-  },
-  iosstatusBarblackIcon: {
-    maxWidth: "100%",
-    height: 44,
-    left: 0,
-    right: 0,
-    overflow: "hidden",
   },
   filter: {
     top: 8,
@@ -203,7 +190,7 @@ const styles = StyleSheet.create({
   buttonsecondary: {
     top: 494,
     left: 98,
-    backgroundColor: Color.gray01,
+    // backgroundColor: Color.gray01,
     flexDirection: "row",
     alignItems: "center",
     paddingVertical: Padding.p_base,
