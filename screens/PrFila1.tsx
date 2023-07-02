@@ -9,11 +9,6 @@ const PrFila1 = () => {
 
   return (
     <View style={styles.prFila}>
-      <Image
-        style={[styles.iosstatusBarblackIcon, styles.marketPosition]}
-        contentFit="cover"
-        source={require("../assets/iosstatus-barblack.png")}
-      />
       <View style={styles.pageHeader}>
         <Text style={[styles.filter, styles.iconxPosition]}>Filter</Text>
         <Text style={[styles.market, styles.domFlexBox]}>Pré-Fila</Text>
@@ -340,13 +335,6 @@ const styles = StyleSheet.create({
     fontFamily: FontFamily.uI16Medium,
     fontWeight: "500",
     position: "absolute",
-  },
-  iosstatusBarblackIcon: {
-    maxWidth: "100%",
-    height: 44,
-    left: 0,
-    right: 0,
-    overflow: "hidden",
   },
   filter: {
     top: 8,

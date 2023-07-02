@@ -9,22 +9,13 @@ const PainelDoPaciente = () => {
 
   return (
     <View style={styles.painelDoPaciente}>
-      <Image
-        style={[styles.iosstatusBarblackIcon, styles.feedPosition]}
-        contentFit="cover"
-        source={require("../assets/iosstatus-barblack.png")}
-      />
       <View style={[styles.pageHeader, styles.imagePosition]}>
-        <Text style={[styles.filter, styles.iconxPosition]}>Filter</Text>
-        <Text style={[styles.feed, styles.feedTypo]}>Painel doPaciente</Text>
-        <Image
-          style={[styles.iconx, styles.iconxPosition]}
-          contentFit="cover"
-          source={require("../assets/iconx.png")}
-        />
+        <Text style={[styles.feed, styles.feedTypo]}>
+          Painel do{"\n"}Paciente
+        </Text>
         <Pressable
           style={styles.back}
-          onPress={() => navigation.navigate("LogIn1")}
+          onPress={() => navigation.navigate("LogIn")}
         >
           <Text style={[styles.voltar, styles.filterTypo]}>Voltar</Text>
         </Pressable>
@@ -38,9 +29,9 @@ const PainelDoPaciente = () => {
       </Pressable>
       <Pressable
         style={[styles.buttonprimary1, styles.buttonprimaryPosition]}
-        onPress={() => navigation.navigate("PrFila1")}
+        onPress={() => navigation.navigate("PrFila")}
       >
-        <Text style={[styles.logIn, styles.feedTypo]}>Pré-Fila</Text>
+        <Text style={[styles.logIn, styles.feedTypo]}>Pré-Filas</Text>
       </Pressable>
       <Pressable
         style={[styles.buttonprimary2, styles.buttonprimaryPosition]}
@@ -87,13 +78,6 @@ const styles = StyleSheet.create({
     right: 14,
     position: "absolute",
   },
-  iosstatusBarblackIcon: {
-    maxWidth: "100%",
-    height: 44,
-    left: 0,
-    right: 0,
-    overflow: "hidden",
-  },
   filter: {
     top: 8,
     textAlign: "right",
@@ -107,6 +91,7 @@ const styles = StyleSheet.create({
     marginLeft: -64.5,
     left: "50%",
     fontSize: FontSize.uI30Semi_size,
+    textAlign: "center",
     color: Color.black,
     top: 0,
     position: "absolute",
@@ -118,10 +103,13 @@ const styles = StyleSheet.create({
     left: 0,
   },
   voltar: {
-    marginTop: -10,
+    marginTop: 5,
+    marginLeft: 6,
     textAlign: "left",
   },
   back: {
+    height: 40,
+    width: 60,
     top: "50%",
     left: 0,
     position: "absolute",
@@ -133,7 +121,6 @@ const styles = StyleSheet.create({
   image: {
     top: 566,
     borderRadius: Border.br_5xs,
-    backgroundColor: Color.whitesmoke_200,
     height: 228,
   },
   logIn: {

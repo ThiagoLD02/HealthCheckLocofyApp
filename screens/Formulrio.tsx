@@ -9,11 +9,6 @@ const Formulrio = () => {
 
   return (
     <View style={styles.formulrio}>
-      <Image
-        style={[styles.iosstatusBarblackIcon, styles.iconLayout]}
-        contentFit="cover"
-        source={require("../assets/iosstatus-barblack.png")}
-      />
       <View style={styles.pageHeader}>
         <Text style={[styles.filter, styles.novoFlexBox]}>Filter</Text>
         <Text style={styles.content}>Formulário</Text>
@@ -24,7 +19,7 @@ const Formulrio = () => {
         />
         <Pressable
           style={styles.back}
-          onPress={() => navigation.navigate("PainelDaUnidadeDeAtendimento")}
+          onPress={() => navigation.navigate("PainelDoPaciente")}
         >
           <Text style={styles.voltar}>Voltar</Text>
         </Pressable>
@@ -332,12 +327,6 @@ const styles = StyleSheet.create({
     fontFamily: FontFamily.uI16Medium,
     fontWeight: "500",
     position: "absolute",
-  },
-  iosstatusBarblackIcon: {
-    height: 44,
-    left: 0,
-    right: 0,
-    top: 0,
   },
   filter: {
     top: 8,

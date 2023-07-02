@@ -6,16 +6,17 @@ import { Color, Border, FontSize, FontFamily } from "../GlobalStyles";
 
 const PrRegistro = () => {
   const navigation = useNavigation();
+  const showToast = () => {
+    toast("Dados salvos!", {
+      position: "bottom",
+      duration: 3000,
+      hideOnPress: true,
+    });
+  };
 
   return (
     <View style={styles.prRegistro}>
-      <Image
-        style={[styles.iosstatusBarblackIcon, styles.iconLayout]}
-        contentFit="cover"
-        source={require("../assets/iosstatus-barblack.png")}
-      />
       <View style={styles.pageHeader}>
-        <Text style={[styles.filter, styles.showFlexBox]}>Filter</Text>
         <Text style={styles.content}>Pré-Registro</Text>
         <Image
           style={[styles.iconx, styles.iconxLayout]}
@@ -27,6 +28,9 @@ const PrRegistro = () => {
           onPress={() => navigation.navigate("PainelDoPaciente")}
         >
           <Text style={styles.voltar}>Voltar</Text>
+        </Pressable>
+        <Pressable style={styles.save} onPress={showToast}>
+          <Text style={styles.salvar}>Salvar</Text>
         </Pressable>
       </View>
       <View style={[styles.checkboxOptionempty, styles.checkboxLayout3]}>
@@ -315,13 +319,6 @@ const styles = StyleSheet.create({
     height: 50,
     position: "absolute",
   },
-  iosstatusBarblackIcon: {
-    height: 44,
-    left: 0,
-    right: 0,
-    maxWidth: "100%",
-    top: 0,
-  },
   filter: {
     top: 8,
     display: "none",
@@ -349,7 +346,8 @@ const styles = StyleSheet.create({
     left: 0,
   },
   voltar: {
-    marginTop: -10,
+    marginTop: 5,
+    marginLeft: 6,
     textAlign: "left",
     color: Color.mediumseagreen,
     fontFamily: FontFamily.uI16Medium,
@@ -357,9 +355,27 @@ const styles = StyleSheet.create({
     fontSize: FontSize.uI16Medium_size,
   },
   back: {
-    top: "50%",
+    height: 40,
+    width: 60,
+    top: "20%",
     left: 0,
     position: "absolute",
+  },
+  save: {
+    height: 40,
+    width: 60,
+    top: "20%",
+    right: 0,
+    position: "absolute",
+  },
+  salvar: {
+    marginTop: 5,
+    marginRight: 6,
+    textAlign: "left",
+    color: Color.mediumseagreen,
+    fontFamily: FontFamily.uI16Medium,
+    fontWeight: "500",
+    fontSize: FontSize.uI16Medium_size,
   },
   pageHeader: {
     top: 60,

@@ -2,23 +2,16 @@ const Stack = createNativeStackNavigator();
 import * as React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { useFonts } from "expo-font";
-import Insights from "./screens/Insights";
-import FluxosDeTrabalho from "./screens/FluxosDeTrabalho";
-import GeradorDeQRCode from "./screens/GeradorDeQRCode";
+import LeitorDeQRCode from "./screens/LeitorDeQRCode";
 import CheckIn from "./screens/CheckIn";
-import PrFila from "./screens/PrFila";
 import PrFila1 from "./screens/PrFila1";
 import Formulrio from "./screens/Formulrio";
-import PainelDaUnidadeDeAtendimen from "./screens/PainelDaUnidadeDeAtendimen";
-import PrRegistro from "./screens/PrRegistro";
 import PainelDoPaciente from "./screens/PainelDoPaciente";
-import LogIn from "./screens/LogIn";
-import SignUp from "./screens/SignUp";
 import LogIn1 from "./screens/LogIn1";
+import PrRegistro from "./screens/PrRegistro";
 import SignUp1 from "./screens/SignUp1";
 
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import { View, Text, Pressable, TouchableOpacity } from "react-native";
 
 const App = () => {
   const [hideSplashScreen, setHideSplashScreen] = React.useState(true);
@@ -31,7 +24,6 @@ const App = () => {
     Poppins_regular: require("./assets/fonts/Poppins_regular.ttf"),
     Poppins_medium: require("./assets/fonts/Poppins_medium.ttf"),
     Poppins_semibold: require("./assets/fonts/Poppins_semibold.ttf"),
-    "SF Pro Text_regular": require("./assets/fonts/SF_Pro_Text_regular.ttf"),
   });
 
   if (!fontsLoaded && !error) {
@@ -44,18 +36,13 @@ const App = () => {
         {hideSplashScreen ? (
           <Stack.Navigator screenOptions={{ headerShown: false }}>
             <Stack.Screen
-              name="Insights"
-              component={Insights}
+              name="LogIn"
+              component={LogIn1}
               options={{ headerShown: false }}
             />
             <Stack.Screen
-              name="FluxosDeTrabalho"
-              component={FluxosDeTrabalho}
-              options={{ headerShown: false }}
-            />
-            <Stack.Screen
-              name="GeradorDeQRCode"
-              component={GeradorDeQRCode}
+              name="LeitorDeQRCode"
+              component={LeitorDeQRCode}
               options={{ headerShown: false }}
             />
             <Stack.Screen
@@ -64,12 +51,12 @@ const App = () => {
               options={{ headerShown: false }}
             />
             <Stack.Screen
-              name="PrFila"
-              component={PrFila}
+              name="PrRegistro"
+              component={PrRegistro}
               options={{ headerShown: false }}
             />
             <Stack.Screen
-              name="PrFila1"
+              name="PrFila"
               component={PrFila1}
               options={{ headerShown: false }}
             />
@@ -79,37 +66,12 @@ const App = () => {
               options={{ headerShown: false }}
             />
             <Stack.Screen
-              name="PainelDaUnidadeDeAtendimento"
-              component={PainelDaUnidadeDeAtendimen}
-              options={{ headerShown: false }}
-            />
-            <Stack.Screen
-              name="PrRegistro"
-              component={PrRegistro}
-              options={{ headerShown: false }}
-            />
-            <Stack.Screen
               name="PainelDoPaciente"
               component={PainelDoPaciente}
               options={{ headerShown: false }}
             />
             <Stack.Screen
-              name="LogIn"
-              component={LogIn}
-              options={{ headerShown: false }}
-            />
-            <Stack.Screen
               name="SignUp"
-              component={SignUp}
-              options={{ headerShown: false }}
-            />
-            <Stack.Screen
-              name="LogIn1"
-              component={LogIn1}
-              options={{ headerShown: false }}
-            />
-            <Stack.Screen
-              name="SignUp1"
               component={SignUp1}
               options={{ headerShown: false }}
             />
